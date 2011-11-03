@@ -1,7 +1,88 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require_tree . 
-*/
+/* @override http://localhost:3000/assets/application.css?body=1 */
+
+body, html { 
+  margin:0; 
+  padding: 0; 
+  overflow:hidden;
+  font-family:Arial; 
+  font-size:20px;
+  text-align: center;
+}
+    
+#cr-stage { 
+  border:2px solid black; 
+  margin:5px auto; 
+  color:white;
+}
+
+#interface {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 0.6em;
+  padding-top: 0.5em;
+}
+
+#times {
+  position: absolute;
+  top: 0;
+  left: ;
+  text-align: left;
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #d4d4d4;
+  min-width: 320px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.best-time {
+  color: #00b000;
+}
+
+.half-time {
+  color: #00b000;
+}
+
+.half-time.behind {
+  color: #b82d37;
+}
+
+.message {
+  padding: 10px;
+  border: 1px dashed #8c8c8c;
+  width: 30%;
+  position: absolute;
+  top: 300px;
+  z-index: 1000;
+  left: 33%;
+  background-color: #fff6f4;
+  display: none;
+}
+
+.message h2 {
+  font-size: 0.9em;
+}
+
+.message p {
+  font-size: 1.5em;
+  color: black;
+}
+
+.new-best {
+  background-color: #d0ffcf;
+  color: green;
+}
+
+.not-best {
+  background-color: #ffceb7;
+  color:  red;
+}

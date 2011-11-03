@@ -1,2 +1,22 @@
 
+<div id="interface">
+  <h1>Gravity Switch</h1>
+
+  <div id="times">
+    <p>Best Time: <span class="best-time">No time yet.</span></p>
+    <p>Half Time difference: <span class="half-time">No best time yet.</span></p>
+    <p>Current Time: <span class="current-time">0 seconds</span></p>
+  </div>
+  
+  <div class="message new-best">
+    <h2>That's a new best time!</h2>
+    <p><span class='best-time'>0 seconds</span></p>
+  </div>
+  
+  <div class="message not-best">
+    <h2>You have already been better, try harder!!</h2>
+    <p><span class='current-time'>0 seconds</span></p>
+  </div>
+</div>
+
 <%= javascript_include_tag "gravity_switch" %>
